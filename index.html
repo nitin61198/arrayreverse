@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>userInput</title>
+</head>
+<body>
+    
+<script>   
+// defining array 
+   let elm = prompt("Please type the number of numbers you want to see reverse")
+   var arr = [];
+// input 
+for(let j = 0;j<=elm;j++){
+    arr[j] = prompt("enter number:")
+}
+
+// // display 
+// for(let i = 0;i<=elm;i++){
+//     document.write(geek[i] + "<br>");
+// }
+
+
+
+for(i=0;i<arr.length;i++){
+            sum = 0;
+            number = arr[i];
+           while(number!=0){
+               
+                num = number%10;
+               sum = sum*10+num;
+               number = parseInt(number/10);
+           }
+           document.write(" Reverse number of ",arr[i],' is ',sum,"<br><br>");
+        }
+
+</script>
+
+
+</body>
+</html>
